@@ -60,7 +60,7 @@ if(targetcurrency === 'undefined'){
 const rates = {
     USD: {
         CAD: 1.25,
-        INR: 0.01,
+        INR: 75.05,
     },
     CAD: {
         USD:0.79,
@@ -126,4 +126,4 @@ var result = 0;
 // This message should also include the original amount and currency information
 // supplied by the user.
 
-console.log(`original amount ${amount} converted from ${initialcurrency} to ${targetcurrency} resulting amount is: ${result}`);
+console.log(`original amount ${amount}  has been converted from ${initialcurrency} to ${targetcurrency} resulting amount is: ${result}`);
