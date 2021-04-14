@@ -125,3 +125,5 @@ var result = 0;
 
 // This message should also include the original amount and currency information
 // supplied by the user.
+
+console.log(`original amount ${amount} converted from ${initialcurrency} to ${targetcurrency} resulting amount is: ${result}`);
