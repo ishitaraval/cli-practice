@@ -84,13 +84,17 @@ console.log('The Rates are', rates);
 // warning message and exit the program.
 
 const ratetabforinitialcurrency = rates[initialcurrency];
+const ratetabtargetcurrency = rates[targetcurrency];
 
 if(ratetabforinitialcurrency === 'undefined'){
-    console.error('Whoops, the initial currency is invalid, Received:',initialcurrency);
+    console.error("Whoops, the initial currency is invalid, Received:",initialcurrency);
     process.exit();
 }
 
-
+if(ratetabtargetcurrency === 'undefined'){
+    console.error("Whoops, the target currency is invalid, Received:",targetcurrency);
+    process.exit();
+}
 // --------------------------------------------------
 // Step 5: Perform conversion
 // --------------------------------------------------
