@@ -34,12 +34,15 @@ console.log('The Target currency is:',targetcurrency);
 
 if(amount === 'undefined'){
     console.error("Whoops,Please enter the amount which you want to convert");
+    process.exit();
 }
 if(initialcurrency === 'undefined'){
     console.error("Whoops, Please enter the initial currency of your amount");
+    process.exit();
 }
 if(targetcurrency === 'undefined'){
     console.error("Whoops, Please enter the target currency of the amount");
+    process.exit();
 }
 
 // --------------------------------------------------
