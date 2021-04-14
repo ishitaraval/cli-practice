@@ -71,6 +71,8 @@ const rates = {
         USD: 0.01,
     },
 };
+ 
+console.log('The Rates are', rates);
 
 // --------------------------------------------------
 // Step 4: Ensure that a conversion rate exists
