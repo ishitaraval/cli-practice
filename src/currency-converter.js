@@ -83,6 +83,12 @@ console.log('The Rates are', rates);
 // If the user supplies an invalid initial or target currency, display a meaningful
 // warning message and exit the program.
 
+const ratetabforinitialcurrency = rates[initialcurrency];
+
+if(ratetabforinitialcurrency === 'undefined'){
+    console.error('Whoops, the initial currency is invalid, Received:',initialcurrency);
+    process.exit();
+}
 
 
 // --------------------------------------------------
