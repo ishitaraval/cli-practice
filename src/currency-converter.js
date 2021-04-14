@@ -19,8 +19,10 @@
  const amount = process.argv[2];
  const initialcurrency = process.argv[3];
  const targetcurrency = process.argv[4];
- 
 
+console.log('The Amount is:',amount);
+console.log('The Initial currency is:',initialcurrency);
+console.log('The Target currency is:',targetcurrency);
 
 // --------------------------------------------------
 // Step 2: Validate user input
