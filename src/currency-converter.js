@@ -57,7 +57,20 @@ if(targetcurrency === 'undefined'){
 // The conversion rates do not have to be accurate, athough this resource contains
 // up-to-date rate information: https://www.xe.com/
 
-
+const rates = {
+    USD: {
+        CAD: 1.25,
+        INR: 0.01,
+    },
+    CAD: {
+        USD:0.79,
+        INR: 59.9,
+    },
+    INR: {
+        CAD: 0.016,
+        USD: 0.01,
+    },
+};
 
 // --------------------------------------------------
 // Step 4: Ensure that a conversion rate exists
