@@ -103,7 +103,20 @@ if(ratetabtargetcurrency === 'undefined'){
 
 // Now we will compute the rate, apply it to the amount, and capture the result.
 
+var result = 0;
+  
+  try{
+    if (initialcurrency == targetcurrency){
+      result = amount;
+    } else {
+     result = amount * rates[initialcurrency][targetcurrency];
+  }
+  }
+  catch(err) {
+    result = amount * (1 / rates[targetcurrency][initialcurrency]);
+  }
 
+  
 
 // --------------------------------------------------
 // Step 6: Display results
